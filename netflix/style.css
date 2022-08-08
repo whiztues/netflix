@@ -1,0 +1,457 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: white;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: block;
+    z-index: 100;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.showcase {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("images/NG-en-20220523-popsignuptwoweeks-perspective_alpha_website_medium.jpg") no-repeat center/cover;
+
+}
+
+.showcase .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 10rem;
+    z-index: 100;
+}
+
+.header .logo img {
+    width: 100%;
+    z-index: 100;
+}
+
+.header .navbar .btn {
+    z-index: 100;
+}
+
+.showcase main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 10;
+    line-height: 2.0;
+}
+
+.showcase::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+.showcase .container {
+    z-index: 100;
+}
+
+.showcase main h1 {
+    font-size: 4rem;
+    margin-top: 30px;
+    /* margin-bottom: 0px; */
+    z-index: 100;
+}
+
+
+.showcase main h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+
+    z-index: 100;
+}
+
+.showcase main p {
+    font-size: 1rem;
+    z-index: 100;
+}
+
+.showcase main .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 2px;
+}
+
+.showcase main .newsletter input {
+    width: 85%;
+    padding: 1.3rem 1rem;
+    font-size: 1.7em;
+    border-radius: 6px;
+    border: none;
+    z-index: 100;
+
+}
+
+.showcase main .newsletter input:focus {
+    outline: 0;
+}
+
+.showcase main .newsletter .btn {
+    padding: .8rem 0;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    width: 20%;
+    z-index: 100;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex .box {
+    flex: 1;
+    text-align: left;
+}
+
+.flex .box h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.flex .box p {
+    font-size: 1.4em;
+    line-height: 1.5;
+
+}
+
+.flex .box video {
+    width: 70%;
+    height: 700px;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+}
+
+.flex .box img {
+    width: 100%;
+    height: auto
+}
+
+
+
+.btn {
+    display: inline;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+
+.btn-icon {
+    margin-left: 1rem;
+}
+
+.third {
+    padding: 50px 0;
+}
+
+
+.acc .h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.accordion {
+    background-color: rgba(134, 134, 134, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgba(134, 134, 134, 0.5);
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\00D7";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(134, 134, 134, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.panel p {
+    padding: 20px 0px;
+}
+
+.main .small {
+    font-size: 18px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52%;
+    margin: auto;
+
+}
+
+.main form input {
+    width: 70%;
+    outline: none;
+    border: 2px solid rgba(29, 65, 184, 0.5);
+    font-size: 18px;
+    padding: 16px 20px;
+}
+
+.main form button {
+    width: 30%;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 12px 0px;
+    color: white;
+    background-color: rgb(233, 10, 10);
+}
+
+.form {
+    margin: 0px;
+}
+
+footer {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 80px 15% 50px;
+    margin-top: 100px;
+    border-top: 7px solid rgba(214, 212, 212, 0.5);
+    color: rgba(214, 212, 212, 0.5);
+}
+
+footer a {
+    color: rgba(214, 212, 212, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .question {
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+footer ul a {
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .showcase {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .header .logo {
+        width: 6rem;
+        z-index: 100;
+    }
+
+    .showcase main h1 {
+        font-size: 1.6rem;
+
+        z-index: 100;
+    }
+
+
+    .showcase main h2 {
+        font-size: 1rem;
+        /* margin-top: 10px; */
+        z-index: 100;
+    }
+
+    .showcase main .newsletter {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .showcase main .newsletter input {
+        width: 90%;
+        padding: 20px 4px;
+        font-size: 16px;
+
+    }
+
+    .showcase main .newsletter .btn {
+        width: 20%;
+        padding: .5em 1rem;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+
+    .flex {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .flex .box {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .flex .box h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .flex .box p {
+        font-size: 14px;
+        line-height: 1.5;
+
+    }
+
+    .flex .box video {
+        width: 100%;
+        height: auto
+    }
+
+    .flex .box img {
+        width: 100%;
+        height: auto
+    }
+
+
+
+}
